@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+
+.expense-item__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.expense-item h2 {
+    color: #2d3748; /* text-gray-800 */
+    font-size: 1.25rem;
+    margin: 0;
+    flex: 1;
+}
+
+.expense-item__price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff; /* text-white */
+    background-color: #5a67d8; /* bg-indigo-600 */
+    padding: 0.5rem 1.5rem;
+    border-radius: 12px;
+}
+
+@media (min-width: 580px) {
+    .expense-item__description h2 {
+        font-size: 1.5rem;
+    }
+
+    .expense-item__price {
+        font-size: 1.5rem;
+    }
+}
