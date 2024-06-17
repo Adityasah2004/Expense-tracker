@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Expenses from "./components/Expenses";
 import NewExpense from './components/NewExpense';
 
+
 const initial_expenses = [
     {
         id: 'e1',
